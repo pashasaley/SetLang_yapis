@@ -1,0 +1,93 @@
+a = -35
+b = 25
+
+print a
+print "\n"
+print b
+
+print "\n"
+
+if (a >= b){
+    print "\n"
+    print "a >= b"
+} else {
+    print "\n"
+    print "a < b"
+}
+
+print "\n"
+
+counter = 2 + 2.8 * 5
+while (counter <= 25) {
+    if (counter == 23) {
+        print "\n"
+        print "counter = 23"
+        break
+    }
+    if (counter == 21) {
+        counter = counter + 1
+        print "\n"
+        print "counter = counter + 1"
+        continue
+    }
+    counter = counter + 1
+}
+
+print "\n"
+
+j = 0
+do {
+    if (j == 2) {
+        break
+    }
+    print "\n"
+    print "j = "
+    print j
+    j = j + 1
+} while (j != 5)
+
+print "\n"
+
+for i = 0; i < 10; i = i + 1 {
+    if (i == 6) {
+        break
+    }
+    if (i == 4) {
+        i = i + 1
+        continue
+    } else {
+    print "\n"
+    print "i = "
+    print i
+    }
+}
+
+def increment(variable, incrementValue) {
+    variable = variable + incrementValue
+    print "\n"
+    print "User function example"
+    print "\n"
+    print variable
+}
+
+increment(a, b)
+
+x = 10
+y = 2
+
+def cycleMultiplicative(firstVariable, secondVariable) {
+    localCounter = 0
+    while (localCounter != 6) {
+        firstVariable = firstVariable * secondVariable
+        localCounter = localCounter + 1
+    }
+    print "\n"
+    print firstVariable
+}
+
+print "\n"
+
+print "Call one more user method"
+cycleMultiplicative(x, y)
+print "\n"
+print x
